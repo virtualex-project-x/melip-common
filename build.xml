@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<project name="melip-common" default="makejar">
+
+  <property name="projectDir" value="." />
+  <property name="libDir" value="./lib" />
+  <property name="binDir" value="./bin" />
+  <property name="srcDir" value="./src" />
+  <property name="docDir" value="./doc" />
+  <property name="releaseDir" value="./release" />
+
+  <property name="coreVersion" value="1.1" />
+  <property name="jarName" value="melip-common.jar" />
+  <property name="zipName" value="melip-common-src.zip" />
+
+  <property name="melip-webservices-context" value="../melip-webservices/WebContent" />
+  <property name="warLibDir" value="/WEB-INF/lib" />
+
+  <path id="project.class.path">
+    <pathelement path="${java.class.path}" />
+    <pathelement path="${binDir}" />
+    <fileset dir="${libDir}">
+      <include name="*.jar" />
+      <include name="*.zip" />
+    </fileset>
+  </path>
+
+  <target name="clean">
+    <delete dir="${binDir}" />
+    <delete failonerror="false">
+      <fileset dir="${releaseDir}">
+        <include name="*" />
+      </fileset>
+    </delete>
+  </target>
+
+  <target name="compile" depends="clean">
+    <!-- ディレクトリ初期化 -->
+    <delete dir="${binDir}" />
+    <mkdir dir="${binDir}" />
+
+    <!-- コンパイル -->
+    <javac debug="true" destdir="${binDir}" encoding="UTF-8" classpathref="project.class.path"
+      includeantruntime="false">
+      <src path="${srcDir}" />
+      <!-- <compilerarg value="-Xlint:deprecation" /> -->
+      <!-- <compilerarg value="-Xlint:unchecked" /> -->
+    </javac>
+
+    <!-- Java以外のリソースコピー -->
+    <copy todir="${binDir}">
+      <fileset dir="${srcDir}">
+        <exclude name="**/*.java" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- jar生成タスク クリーン、コンパイルを実行した後最新のclassファイルでjarを作成 -->
+  <target name="makejar" depends="compile">
+    <!-- ディレクトリ作成・旧バージョン削除 -->
+    <mkdir dir="${releaseDir}" />
+    <delete file="${releaseDir}}/${jarName}" />
+    <delete file="${releaseDir}}/${zipName}" />
+    <!-- Jar作成 -->
+    <jar basedir="${binDir}" jarfile="${releaseDir}/${jarName}" />
+    <zip basedir="${srcDir}" destfile="${releaseDir}/${zipName}" />
+    <!--ファイルコピー -->
+    <copy file="${releaseDir}/${jarName}" todir="${melip-webservices-context}${warLibDir}" />
+  </target>
+
+  <!-- javadoc生成タスク -->
+  <target name="javadoc">
+    <javadoc access="public" author="false" destdir="${docDir}/javadoc" source="1.8"
+      sourcepath="src" splitindex="true" use="true" version="true" encoding="UTF-8" charset="UTF-8">
+      <classpath refid="project.class.path"></classpath>
+    </javadoc>
+  </target>
+
+  <!-- リリース用タスク makejarとjavadoc生成を実施 -->
+  <target name="release" depends="makejar,javadoc" />
+
+</project>
