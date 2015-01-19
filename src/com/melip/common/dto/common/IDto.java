@@ -1,4 +1,4 @@
-package com.melip.webservices.dto.common;
+package com.melip.common.dto.common;
 
 import java.io.Serializable;
 

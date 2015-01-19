@@ -1,6 +1,6 @@
-package com.melip.webservices.dto.screen;
+package com.melip.common.dto.screen;
 
-import com.melip.webservices.dto.common.AbstractDto;
+import com.melip.common.dto.common.AbstractDto;
 
 /**
  * スクリーンオブジェクトDTO
