@@ -1,6 +1,6 @@
 package com.melip.common.dto.screen;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import com.melip.common.dto.common.AbstractDto;
 
@@ -13,7 +13,7 @@ public class ScreenObjGrpDto extends AbstractDto {
   public static final String FIELD_SCREEN_OBJ_DTO_LIST = "screenObjDtoList";
 
   /** スクリーンオブジェクトDTOリスト */
-  private ArrayList<ScreenObjDto> screenObjDtoList;
+  private List<ScreenObjDto> screenObjDtoList;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -23,7 +23,7 @@ public class ScreenObjGrpDto extends AbstractDto {
    *
    * @return スクリーンオブジェクトDTOリスト
    */
-  public ArrayList<ScreenObjDto> getScreenObjDtoList() {
+  public List<ScreenObjDto> getScreenObjDtoList() {
     return screenObjDtoList;
   }
 
@@ -32,7 +32,7 @@ public class ScreenObjGrpDto extends AbstractDto {
    *
    * @param screenObjDtoList スクリーンオブジェクトDTOリスト
    */
-  public void setScreenObjDtoList(ArrayList<ScreenObjDto> screenObjDtoList) {
+  public void setScreenObjDtoList(List<ScreenObjDto> screenObjDtoList) {
     this.screenObjDtoList = screenObjDtoList;
   }
 
