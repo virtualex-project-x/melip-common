@@ -40,8 +40,9 @@
     <mkdir dir="${binDir}" />
 
     <!-- コンパイル -->
+  	<!-- AndroidStudioではjava1.8でjarを作成すると動かないため、1.7でコンパイル（暫定対応） -->
     <javac debug="true" destdir="${binDir}" encoding="UTF-8" classpathref="project.class.path"
-      includeantruntime="false">
+      includeantruntime="false" target="1.7" source="1.7">
       <src path="${srcDir}" />
       <!-- <compilerarg value="-Xlint:deprecation" /> -->
       <!-- <compilerarg value="-Xlint:unchecked" /> -->
