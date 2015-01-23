@@ -9,14 +9,16 @@ import com.melip.common.dto.common.AbstractDto;
  */
 public class ScreenObjGrpDto extends AbstractDto {
 
+  // TODO:スクリーンオブジェクトDTOリストリスト（仮）の名称
+
   /** レイアウトオブジェクトグループIDのフィールド名 */
   public static final String FIELD_LAYOUT_OBJ_GRP_ID = "layoutObjGrpId";
   /** レイアウトオブジェクトグループエイリアスのフィールド名 */
   public static final String FIELD_LAYOUT_OBJ_GRP_ALIAS = "layoutObjGrpAlias";
   /** 多重度のフィールド名 */
   public static final String FIELD_MULTIPLICITY = "multiplicity";
-  /** スクリーンオブジェクトDTOリストのフィールド名 */
-  public static final String FIELD_SCREEN_OBJ_DTO_LIST = "screenObjDtoList";
+  /** スクリーンオブジェクトDTOリストリスト（仮）のフィールド名 */
+  public static final String FIELD_SCREEN_OBJ_DTO_LIST_LIST = "screenObjDtoListList";
 
   /** レイアウトオブジェクトグループID */
   private Integer layoutObjGrpId;
@@ -24,8 +26,8 @@ public class ScreenObjGrpDto extends AbstractDto {
   private String layoutObjGrpAlias;
   /** 多重度 */
   private String multiplicity;
-  /** スクリーンオブジェクトDTOリスト */
-  private List<ScreenObjDto> screenObjDtoList;
+  /** スクリーンオブジェクトDTOリストリスト（仮） */
+  private List<ScreenObjDtoList> screenObjDtoListList;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -85,21 +87,21 @@ public class ScreenObjGrpDto extends AbstractDto {
   }
 
   /**
-   * スクリーンオブジェクトDTOリストを取得します。
+   * スクリーンオブジェクトDTOリストリスト（仮）を取得します。
    * 
-   * @return スクリーンオブジェクトDTOリスト
+   * @return スクリーンオブジェクトDTOリストリスト（仮）
    */
-  public List<ScreenObjDto> getScreenObjDtoList() {
-    return screenObjDtoList;
+  public List<ScreenObjDtoList> getScreenObjDtoListList() {
+    return screenObjDtoListList;
   }
 
   /**
-   * スクリーンオブジェクトDTOリストを設定します。
+   * スクリーンオブジェクトDTOリストリスト（仮）を設定します。
    * 
-   * @param screenObjDtoList スクリーンオブジェクトDTOリスト
+   * @param screenObjDtoListList スクリーンオブジェクトDTOリストリスト（仮）
    */
-  public void setScreenObjDtoList(List<ScreenObjDto> screenObjDtoList) {
-    this.screenObjDtoList = screenObjDtoList;
+  public void setScreenObjDtoListList(List<ScreenObjDtoList> screenObjDtoListList) {
+    this.screenObjDtoListList = screenObjDtoListList;
   }
 
 }

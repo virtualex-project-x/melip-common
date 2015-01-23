@@ -15,6 +15,8 @@ public class AttrDto extends AbstractDto {
   public static final String FIELD_ATTR_VAL = "attrVal";
   /** 属性コード値のフィールド名 */
   public static final String FIELD_ATTR_CD_VAL = "attrCdVal";
+  /** 表示順のフィールド名 */
+  public static final String FIELD_DISPLAY_NUM = "displayNum";
 
   /** 属性グループID */
   private Integer attrGrpId;
@@ -26,6 +28,8 @@ public class AttrDto extends AbstractDto {
   private String attrVal;
   /** 属性コード値 */
   private String attrCdVal;
+  /** 表示順 */
+  private Integer displayNum;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -118,6 +122,24 @@ public class AttrDto extends AbstractDto {
    */
   public void setAttrCdVal(String attrCdVal) {
     this.attrCdVal = attrCdVal;
+  }
+
+  /**
+   * 表示順を取得します。
+   * 
+   * @return 表示順
+   */
+  public Integer getDisplayNum() {
+    return displayNum;
+  }
+
+  /**
+   * 表示順を設定します。
+   * 
+   * @param displayNum 表示順
+   */
+  public void setDisplayNum(Integer displayNum) {
+    this.displayNum = displayNum;
   }
 
 }
