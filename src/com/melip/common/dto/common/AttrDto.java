@@ -3,29 +3,29 @@ package com.melip.common.dto.common;
 /**
  * 属性DTO
  */
-public class AttDto extends AbstractDto {
+public class AttrDto extends AbstractDto {
 
   /** 属性グループIDのフィールド名 */
-  public static final String FIELD_ATT_GRP_ID = "attGrpId";
+  public static final String FIELD_ATTR_GRP_ID = "attrGrpId";
   /** 属性グループ種別のフィールド名 */
-  public static final String FIELD_ATT_GRP_TYPE = "attGrpType";
+  public static final String FIELD_ATTR_GRP_TYPE = "attrGrpType";
   /** 属性グループ名称のフィールド名 */
-  public static final String FIELD_ATT_GRP_NM = "attGrpNm";
+  public static final String FIELD_ATTR_GRP_NM = "attrGrpNm";
   /** 属性値のフィールド名 */
-  public static final String FIELD_ATT_VAL = "attVal";
+  public static final String FIELD_ATTR_VAL = "attrVal";
   /** 属性コード値のフィールド名 */
-  public static final String FIELD_ATT_CD_VAL = "attCdVal";
+  public static final String FIELD_ATTR_CD_VAL = "attrCdVal";
 
   /** 属性グループID */
-  private Integer attGrpId;
+  private Integer attrGrpId;
   /** 属性グループ種別 */
-  private String attGrpType;
+  private String attrGrpType;
   /** 属性グループ名称 */
-  private String attGrpNm;
+  private String attrGrpNm;
   /** 属性値 */
-  private String attVal;
+  private String attrVal;
   /** 属性コード値 */
-  private String attCdVal;
+  private String attrCdVal;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -35,17 +35,17 @@ public class AttDto extends AbstractDto {
    * 
    * @return 属性グループID
    */
-  public Integer getAttGrpId() {
-    return attGrpId;
+  public Integer getAttrGrpId() {
+    return attrGrpId;
   }
 
   /**
    * 属性グループIDを設定します。
    * 
-   * @param attGrpId 属性グループID
+   * @param attrGrpId 属性グループID
    */
-  public void setAttGrpId(Integer attGrpId) {
-    this.attGrpId = attGrpId;
+  public void setAttrGrpId(Integer attrGrpId) {
+    this.attrGrpId = attrGrpId;
   }
 
   /**
@@ -53,17 +53,17 @@ public class AttDto extends AbstractDto {
    * 
    * @return 属性グループ種別
    */
-  public String getAttGrpType() {
-    return attGrpType;
+  public String getAttrGrpType() {
+    return attrGrpType;
   }
 
   /**
    * 属性グループ種別を設定します。
    * 
-   * @param attGrpType 属性グループ種別
+   * @param attrGrpType 属性グループ種別
    */
-  public void setAttGrpType(String attGrpType) {
-    this.attGrpType = attGrpType;
+  public void setAttrGrpType(String attrGrpType) {
+    this.attrGrpType = attrGrpType;
   }
 
   /**
@@ -71,17 +71,17 @@ public class AttDto extends AbstractDto {
    * 
    * @return 属性グループ名称
    */
-  public String getAttGrpNm() {
-    return attGrpNm;
+  public String getAttrGrpNm() {
+    return attrGrpNm;
   }
 
   /**
    * 属性グループ名称を設定します。
    * 
-   * @param attGrpNm 属性グループ名称
+   * @param attrGrpNm 属性グループ名称
    */
-  public void setAttGrpNm(String attGrpNm) {
-    this.attGrpNm = attGrpNm;
+  public void setAttrGrpNm(String attrGrpNm) {
+    this.attrGrpNm = attrGrpNm;
   }
 
   /**
@@ -89,17 +89,17 @@ public class AttDto extends AbstractDto {
    * 
    * @return 属性値
    */
-  public String getAttVal() {
-    return attVal;
+  public String getAttrVal() {
+    return attrVal;
   }
 
   /**
    * 属性値を設定します。
    * 
-   * @param attVal 属性値
+   * @param attrVal 属性値
    */
-  public void setAttVal(String attVal) {
-    this.attVal = attVal;
+  public void setAttrVal(String attrVal) {
+    this.attrVal = attrVal;
   }
 
   /**
@@ -107,17 +107,17 @@ public class AttDto extends AbstractDto {
    * 
    * @return 属性コード値
    */
-  public String getAttCdVal() {
-    return attCdVal;
+  public String getAttrCdVal() {
+    return attrCdVal;
   }
 
   /**
    * 属性コード値を設定します。
    * 
-   * @param attCdVal 属性コード値
+   * @param attrCdVal 属性コード値
    */
-  public void setAttCdVal(String attCdVal) {
-    this.attCdVal = attCdVal;
+  public void setAttrCdVal(String attrCdVal) {
+    this.attrCdVal = attrCdVal;
   }
 
 }

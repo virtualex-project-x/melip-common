@@ -9,21 +9,17 @@ import com.melip.common.dto.common.AbstractDto;
  */
 public class ScreenDto extends AbstractDto {
 
-  /** 遷移先レイアウトIDのフィールド名 */
-  public static final String FIELD_TARGET_LAYOUT_ID = "targetLayoutId";
-  /** 遷移先スクリーンIDのフィールド名 */
-  public static final String FIELD_TARGET_SCREEN_ID = "targetScreenId";
-  /** スクリーンオブジェクリストのフィールド名 */
-  public static final String FIELD_SCREEN_OBJ_DTO_LIST = "screenObjDtoList";
+  /** レイアウトIDのフィールド名 */
+  public static final String FIELD_LAYOUT_ID = "layoutId";
+  /** スクリーンIDのフィールド名 */
+  public static final String FIELD_SCREEN_ID = "screenId";
   /** スクリーンオブジェクトグループリストのフィールド名 */
   public static final String FIELD_SCREEN_OBJ_GRP_DTO_LIST = "screenObjGrpDtoList";
 
-  /** 遷移先レイアウトID */
-  private Integer targetLayoutId;
-  /** 遷移先スクリーンID */
-  private Integer targetScreenId;
-  /** スクリーンオブジェクリスト */
-  private List<ScreenObjDto> screenObjDtoList;
+  /** レイアウトID */
+  private Integer layoutId;
+  /** スクリーンID */
+  private Integer screenId;
   /** スクリーンオブジェクトグループリスト */
   private List<ScreenObjGrpDto> screenObjGrpDtoList;
 
@@ -31,62 +27,44 @@ public class ScreenDto extends AbstractDto {
   private static final long serialVersionUID = 1L;
 
   /**
-   * 遷移先レイアウトIDを取得します。
-   *
-   * @return 遷移先レイアウトID
+   * レイアウトIDを取得します。
+   * 
+   * @return レイアウトID
    */
-  public Integer getTargetLayoutId() {
-    return targetLayoutId;
+  public Integer getLayoutId() {
+    return layoutId;
   }
 
   /**
-   * 遷移先レイアウトIDを設定します。
-   *
-   * @param targetLayoutId 遷移先レイアウトID
+   * レイアウトIDを設定します。
+   * 
+   * @param layoutId レイアウトID
    */
-  public void setTargetLayoutId(Integer targetLayoutId) {
-    this.targetLayoutId = targetLayoutId;
+  public void setLayoutId(Integer layoutId) {
+    this.layoutId = layoutId;
   }
 
   /**
-   * 遷移先スクリーンIDを取得します。
-   *
-   * @return 遷移先スクリーンID
+   * スクリーンIDを取得します。
+   * 
+   * @return スクリーンID
    */
-  public Integer getTargetScreenId() {
-    return targetScreenId;
+  public Integer getScreenId() {
+    return screenId;
   }
 
   /**
-   * 遷移先スクリーンIDを設定します。
-   *
-   * @param targetScreenId 遷移先スクリーンID
+   * スクリーンIDを設定します。
+   * 
+   * @param screenId スクリーンID
    */
-  public void setTargetScreenId(Integer targetScreenId) {
-    this.targetScreenId = targetScreenId;
-  }
-
-  /**
-   * スクリーンオブジェクリストを取得します。
-   *
-   * @return スクリーンオブジェクリスト
-   */
-  public List<ScreenObjDto> getScreenObjDtoList() {
-    return screenObjDtoList;
-  }
-
-  /**
-   * スクリーンオブジェクリストを設定します。
-   *
-   * @param screenObjDtoList スクリーンオブジェクリスト
-   */
-  public void setScreenObjDtoList(List<ScreenObjDto> screenObjDtoList) {
-    this.screenObjDtoList = screenObjDtoList;
+  public void setScreenId(Integer screenId) {
+    this.screenId = screenId;
   }
 
   /**
    * スクリーンオブジェクトグループリストを取得します。
-   *
+   * 
    * @return スクリーンオブジェクトグループリスト
    */
   public List<ScreenObjGrpDto> getScreenObjGrpDtoList() {
@@ -95,7 +73,7 @@ public class ScreenDto extends AbstractDto {
 
   /**
    * スクリーンオブジェクトグループリストを設定します。
-   *
+   * 
    * @param screenObjGrpDtoList スクリーンオブジェクトグループリスト
    */
   public void setScreenObjGrpDtoList(List<ScreenObjGrpDto> screenObjGrpDtoList) {
