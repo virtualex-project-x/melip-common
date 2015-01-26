@@ -9,16 +9,14 @@ import com.melip.common.dto.common.AbstractDto;
  */
 public class ScreenObjGrpDto extends AbstractDto {
 
-  // TODO:スクリーンオブジェクトDTOリストリスト（仮）の名称
-
   /** レイアウトオブジェクトグループIDのフィールド名 */
   public static final String FIELD_LAYOUT_OBJ_GRP_ID = "layoutObjGrpId";
   /** レイアウトオブジェクトグループエイリアスのフィールド名 */
   public static final String FIELD_LAYOUT_OBJ_GRP_ALIAS = "layoutObjGrpAlias";
   /** 多重度のフィールド名 */
   public static final String FIELD_MULTIPLICITY = "multiplicity";
-  /** スクリーンオブジェクトDTOリストリスト（仮）のフィールド名 */
-  public static final String FIELD_SCREEN_OBJ_DTO_LIST_LIST = "screenObjDtoListList";
+  /** スクリーンオブジェクトバンチDTOリストのフィールド名 */
+  public static final String FIELD_SCREEN_OBJ_BUNCH_DTO_LIST = "screenObjBunchDtoList";
 
   /** レイアウトオブジェクトグループID */
   private Integer layoutObjGrpId;
@@ -26,8 +24,8 @@ public class ScreenObjGrpDto extends AbstractDto {
   private String layoutObjGrpAlias;
   /** 多重度 */
   private String multiplicity;
-  /** スクリーンオブジェクトDTOリストリスト（仮） */
-  private List<ScreenObjDtoList> screenObjDtoListList;
+  /** スクリーンオブジェクトバンチDTOリスト */
+  private List<ScreenObjBunchDto> screenObjBunchDtoList;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -87,21 +85,21 @@ public class ScreenObjGrpDto extends AbstractDto {
   }
 
   /**
-   * スクリーンオブジェクトDTOリストリスト（仮）を取得します。
+   * スクリーンオブジェクトバンチDTOリストを取得します。
    * 
-   * @return スクリーンオブジェクトDTOリストリスト（仮）
+   * @return スクリーンオブジェクトバンチDTOリスト
    */
-  public List<ScreenObjDtoList> getScreenObjDtoListList() {
-    return screenObjDtoListList;
+  public List<ScreenObjBunchDto> getScreenObjBunchDtoList() {
+    return screenObjBunchDtoList;
   }
 
   /**
-   * スクリーンオブジェクトDTOリストリスト（仮）を設定します。
+   * スクリーンオブジェクトバンチDTOリストを設定します。
    * 
-   * @param screenObjDtoListList スクリーンオブジェクトDTOリストリスト（仮）
+   * @param screenObjBunchDtoList スクリーンオブジェクトバンチDTOリスト
    */
-  public void setScreenObjDtoListList(List<ScreenObjDtoList> screenObjDtoListList) {
-    this.screenObjDtoListList = screenObjDtoListList;
+  public void setScreenObjBunchDtoList(List<ScreenObjBunchDto> screenObjBunchDtoList) {
+    this.screenObjBunchDtoList = screenObjBunchDtoList;
   }
 
 }
