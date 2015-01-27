@@ -2,11 +2,14 @@ package com.melip.common.dto.screen;
 
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import com.melip.common.dto.common.AbstractDto;
 
 /**
  * スクリーンDTO
  */
+@XmlRootElement
 public class ScreenDto extends AbstractDto {
 
   /** レイアウトIDのフィールド名 */
