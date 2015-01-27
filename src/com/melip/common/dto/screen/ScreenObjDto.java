@@ -14,6 +14,8 @@ public class ScreenObjDto extends AbstractDto {
   public static final String FIELD_LAYOUT_OBJ_ID = "layoutObjId";
   /** レイアウトオブジェクトエイリアスのフィールド名 */
   public static final String FIELD_LAYOUT_OBJ_ALIAS = "layoutObjAlias";
+  /** レイアウトオブジェクトタイプのフィールド名 */
+  public static final String FIELD_LAYOUT_OBJ_TYPE = "layoutObjType";
   /** スクリーンオブジェクトIDのフィールド名 */
   public static final String FIELD_SCREEN_OBJ_ID = "screenObjId";
   /** 属性DTOリストのフィールド名 */
@@ -23,6 +25,8 @@ public class ScreenObjDto extends AbstractDto {
   private Integer layoutObjId;
   /** レイアウトオブジェクトエイリアス */
   private String layoutObjAlias;
+  /** レイアウトオブジェクトタイプ */
+  private String layoutObjType;
   /** スクリーンオブジェクトID */
   private Integer screenObjId;
   /** 属性DTOリスト */
@@ -65,6 +69,24 @@ public class ScreenObjDto extends AbstractDto {
    */
   public void setLayoutObjAlias(String layoutObjAlias) {
     this.layoutObjAlias = layoutObjAlias;
+  }
+
+  /**
+   * レイアウトオブジェクトタイプを取得します。
+   * 
+   * @return レイアウトオブジェクトタイプ
+   */
+  public String getLayoutObjType() {
+    return layoutObjType;
+  }
+
+  /**
+   * レイアウトオブジェクトタイプを設定します。
+   * 
+   * @param layoutObjType レイアウトオブジェクトタイプ
+   */
+  public void setLayoutObjType(String layoutObjType) {
+    this.layoutObjType = layoutObjType;
   }
 
   /**
