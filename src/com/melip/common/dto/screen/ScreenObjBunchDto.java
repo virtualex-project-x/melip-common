@@ -9,13 +9,21 @@ import com.melip.common.dto.common.AbstractDto;
  */
 public class ScreenObjBunchDto extends AbstractDto {
 
-  /** 表示順のフィールド名 */
-  public static final String FIELD_DISPLAY_NUM = "displayNum";
+  /** 地域IDのフィールド名 */
+  public static final String FIELD_REGION_ID = "regionId";
+  /** 施設グループIDのフィールド名 */
+  public static final String FIELD_FACILITY_GRP_ID = "facilityGrpId";
+  /** 施設IDのフィールド名 */
+  public static final String FIELD_FACILITY_ID = "facilityId";
   /** スクリーンオブジェクトDTOリストのフィールド名 */
   public static final String FIELD_SCREEN_OBJ_DTO_LIST = "screenObjDtoList";
 
-  /** 表示順 */
-  private Integer displayNum;
+  /** 地域ID */
+  private Integer regionId;
+  /** 施設グループID */
+  private Integer facilityGrpId;
+  /** 施設ID */
+  private Integer facilityId;
   /** スクリーンオブジェクトDTOリスト */
   private List<ScreenObjDto> screenObjDtoList;
 
@@ -23,21 +31,57 @@ public class ScreenObjBunchDto extends AbstractDto {
   private static final long serialVersionUID = 1L;
 
   /**
-   * 表示順を取得します。
+   * 地域IDを取得します。
    * 
-   * @return 表示順
+   * @return 地域ID
    */
-  public Integer getDisplayNum() {
-    return displayNum;
+  public Integer getRegionId() {
+    return regionId;
   }
 
   /**
-   * 表示順を設定します。
+   * 地域IDを設定します。
    * 
-   * @param displayNum 表示順
+   * @param regionId 地域ID
    */
-  public void setDisplayNum(Integer displayNum) {
-    this.displayNum = displayNum;
+  public void setRegionId(Integer regionId) {
+    this.regionId = regionId;
+  }
+
+  /**
+   * 施設グループIDを取得します。
+   * 
+   * @return 施設グループID
+   */
+  public Integer getFacilityGrpId() {
+    return facilityGrpId;
+  }
+
+  /**
+   * 施設グループIDを設定します。
+   * 
+   * @param facilityGrpId 施設グループID
+   */
+  public void setFacilityGrpId(Integer facilityGrpId) {
+    this.facilityGrpId = facilityGrpId;
+  }
+
+  /**
+   * 施設IDを取得します。
+   * 
+   * @return 施設ID
+   */
+  public Integer getFacilityId() {
+    return facilityId;
+  }
+
+  /**
+   * 施設IDを設定します。
+   * 
+   * @param facilityId 施設ID
+   */
+  public void setFacilityId(Integer facilityId) {
+    this.facilityId = facilityId;
   }
 
   /**

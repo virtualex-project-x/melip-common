@@ -5,6 +5,12 @@ package com.melip.common.dto.common;
  */
 public class AttrDto extends AbstractDto {
 
+  /** 地域IDのフィールド名 */
+  public static final String FIELD_REGION_ID = "regionId";
+  /** 施設グループIDのフィールド名 */
+  public static final String FIELD_FACILITY_GRP_ID = "facilityGrpId";
+  /** 施設IDのフィールド名 */
+  public static final String FIELD_FACILITY_ID = "facilityId";
   /** 属性グループIDのフィールド名 */
   public static final String FIELD_ATTR_GRP_ID = "attrGrpId";
   /** 属性グループ種別のフィールド名 */
@@ -15,9 +21,13 @@ public class AttrDto extends AbstractDto {
   public static final String FIELD_ATTR_VAL = "attrVal";
   /** 属性コード値のフィールド名 */
   public static final String FIELD_ATTR_CD_VAL = "attrCdVal";
-  /** 表示順のフィールド名 */
-  public static final String FIELD_DISPLAY_NUM = "displayNum";
 
+  /** 地域ID */
+  private Integer regionId;
+  /** 施設グループID */
+  private Integer facilityGrpId;
+  /** 施設ID */
+  private Integer facilityId;
   /** 属性グループID */
   private Integer attrGrpId;
   /** 属性グループ種別 */
@@ -28,11 +38,63 @@ public class AttrDto extends AbstractDto {
   private String attrVal;
   /** 属性コード値 */
   private String attrCdVal;
-  /** 表示順 */
-  private Integer displayNum;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
+
+  /**
+   * 地域IDを取得します。
+   * 
+   * @return 地域ID
+   */
+  public Integer getRegionId() {
+    return regionId;
+  }
+
+  /**
+   * 地域IDを設定します。
+   * 
+   * @param regionId 地域ID
+   */
+  public void setRegionId(Integer regionId) {
+    this.regionId = regionId;
+  }
+
+  /**
+   * 施設グループIDを取得します。
+   * 
+   * @return 施設グループID
+   */
+  public Integer getFacilityGrpId() {
+    return facilityGrpId;
+  }
+
+  /**
+   * 施設グループIDを設定します。
+   * 
+   * @param facilityGrpId 施設グループID
+   */
+  public void setFacilityGrpId(Integer facilityGrpId) {
+    this.facilityGrpId = facilityGrpId;
+  }
+
+  /**
+   * 施設IDを取得します。
+   * 
+   * @return 施設ID
+   */
+  public Integer getFacilityId() {
+    return facilityId;
+  }
+
+  /**
+   * 施設IDを設定します。
+   * 
+   * @param facilityId 施設ID
+   */
+  public void setFacilityId(Integer facilityId) {
+    this.facilityId = facilityId;
+  }
 
   /**
    * 属性グループIDを取得します。
@@ -122,24 +184,6 @@ public class AttrDto extends AbstractDto {
    */
   public void setAttrCdVal(String attrCdVal) {
     this.attrCdVal = attrCdVal;
-  }
-
-  /**
-   * 表示順を取得します。
-   * 
-   * @return 表示順
-   */
-  public Integer getDisplayNum() {
-    return displayNum;
-  }
-
-  /**
-   * 表示順を設定します。
-   * 
-   * @param displayNum 表示順
-   */
-  public void setDisplayNum(Integer displayNum) {
-    this.displayNum = displayNum;
   }
 
 }
