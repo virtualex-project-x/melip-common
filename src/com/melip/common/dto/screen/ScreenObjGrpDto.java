@@ -15,6 +15,8 @@ public class ScreenObjGrpDto extends AbstractDto {
   public static final String FIELD_LAYOUT_OBJ_GRP_ALIAS = "layoutObjGrpAlias";
   /** 多重度のフィールド名 */
   public static final String FIELD_MULTIPLICITY = "multiplicity";
+  /** スクリーンオブジェクトグループIDのフィールド名 */
+  public static final String FIELD_SCREEN_OBJ_GRP_ID = "screenObjGrpId";
   /** スクリーンオブジェクトバンチDTOリストのフィールド名 */
   public static final String FIELD_SCREEN_OBJ_BUNCH_DTO_LIST = "screenObjBunchDtoList";
 
@@ -24,6 +26,8 @@ public class ScreenObjGrpDto extends AbstractDto {
   private String layoutObjGrpAlias;
   /** 多重度 */
   private String multiplicity;
+  /** スクリーンオブジェクトグループID */
+  private Integer screenObjGrpId;
   /** スクリーンオブジェクトバンチDTOリスト */
   private List<ScreenObjBunchDto> screenObjBunchDtoList;
 
@@ -82,6 +86,24 @@ public class ScreenObjGrpDto extends AbstractDto {
    */
   public void setMultiplicity(String multiplicity) {
     this.multiplicity = multiplicity;
+  }
+
+  /**
+   * スクリーンオブジェクトグループIDを取得します。
+   * 
+   * @return スクリーンオブジェクトグループID
+   */
+  public Integer getScreenObjGrpId() {
+    return screenObjGrpId;
+  }
+
+  /**
+   * スクリーンオブジェクトグループIDを設定します。
+   * 
+   * @param screenObjGrpId スクリーンオブジェクトグループID
+   */
+  public void setScreenObjGrpId(Integer screenObjGrpId) {
+    this.screenObjGrpId = screenObjGrpId;
   }
 
   /**
