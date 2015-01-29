@@ -65,9 +65,6 @@
     <!-- Jar作成 -->
     <jar basedir="${binDir}" jarfile="${releaseDir}/${jarName}" />
     <zip basedir="${srcDir}" destfile="${releaseDir}/${zipName}" />
-    <!--ファイルコピー -->
-  	<!-- melip-webservicesのライブラリへコピー -->
-    <copy file="${releaseDir}/${jarName}" todir="${melip-webservices-context}${warLibDir}" />
   </target>
 
   <!-- javadoc生成タスク -->
