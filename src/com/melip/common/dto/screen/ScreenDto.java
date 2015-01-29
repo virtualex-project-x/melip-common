@@ -16,6 +16,8 @@ public class ScreenDto extends AbstractDto {
   public static final String FIELD_LAYOUT_ID = "layoutId";
   /** レイアウトエイリアスのフィールド名 */
   public static final String FIELD_LAYOUT_ALIAS = "layoutAlias";
+  /** レイアウト種別コードエイリアスのフィールド名 */
+  public static final String FIELD_LAYOUT_TYPE_CD_ALIAS = "layoutTypeCdAlias";
   /** スクリーンIDのフィールド名 */
   public static final String FIELD_SCREEN_ID = "screenId";
   /** スクリーンオブジェクトグループリストのフィールド名 */
@@ -25,6 +27,8 @@ public class ScreenDto extends AbstractDto {
   private Integer layoutId;
   /** レイアウトエイリアス */
   private String layoutAlias;
+  /** レイアウト種別コードエイリアス */
+  private String layoutTypeCdAlias;
   /** スクリーンID */
   private Integer screenId;
   /** スクリーンオブジェクトグループリスト */
@@ -67,6 +71,24 @@ public class ScreenDto extends AbstractDto {
    */
   public void setLayoutAlias(String layoutAlias) {
     this.layoutAlias = layoutAlias;
+  }
+
+  /**
+   * レイアウト種別コードエイリアスを取得します。
+   * 
+   * @return レイアウト種別コードエイリアス
+   */
+  public String getLayoutTypeCdAlias() {
+    return layoutTypeCdAlias;
+  }
+
+  /**
+   * レイアウト種別コードエイリアスを設定します。
+   * 
+   * @param layoutTypeCdAlias レイアウト種別コードエイリアス
+   */
+  public void setLayoutTypeCdAlias(String layoutTypeCdAlias) {
+    this.layoutTypeCdAlias = layoutTypeCdAlias;
   }
 
   /**
