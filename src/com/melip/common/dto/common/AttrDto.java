@@ -21,6 +21,8 @@ public class AttrDto extends AbstractDto {
   public static final String FIELD_ATTR_VAL = "attrVal";
   /** 属性コード値のフィールド名 */
   public static final String FIELD_ATTR_CD_VAL = "attrCdVal";
+  /** 遷移先スクリーンIDのフィールド名 */
+  public static final String FIELD_TARGET_SCREEN_ID = "targetScreenId";
 
   /** 地域ID */
   private Integer regionId;
@@ -38,6 +40,8 @@ public class AttrDto extends AbstractDto {
   private String attrVal;
   /** 属性コード値 */
   private String attrCdVal;
+  /** 遷移先スクリーンID */
+  private Integer targetScreenId;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -184,6 +188,24 @@ public class AttrDto extends AbstractDto {
    */
   public void setAttrCdVal(String attrCdVal) {
     this.attrCdVal = attrCdVal;
+  }
+
+  /**
+   * 遷移先スクリーンIDを取得します。
+   * 
+   * @return 遷移先スクリーンID
+   */
+  public Integer getTargetScreenId() {
+    return targetScreenId;
+  }
+
+  /**
+   * 遷移先スクリーンIDを設定します。
+   * 
+   * @param targetScreenId 遷移先スクリーンID
+   */
+  public void setTargetScreenId(Integer targetScreenId) {
+    this.targetScreenId = targetScreenId;
   }
 
 }

@@ -19,6 +19,8 @@ public class ScreenObjGrpDto extends AbstractDto {
   public static final String FIELD_SCREEN_OBJ_GRP_ID = "screenObjGrpId";
   /** スクリーンオブジェクトバンチDTOリストのフィールド名 */
   public static final String FIELD_SCREEN_OBJ_BUNCH_DTO_LIST = "screenObjBunchDtoList";
+  /** 遷移先スクリーンIDのフィールド名 */
+  public static final String FIELD_TARGET_SCREEN_ID = "targetScreenId";
 
   /** レイアウトオブジェクトグループID */
   private Integer layoutObjGrpId;
@@ -30,6 +32,8 @@ public class ScreenObjGrpDto extends AbstractDto {
   private Integer screenObjGrpId;
   /** スクリーンオブジェクトバンチDTOリスト */
   private List<ScreenObjBunchDto> screenObjBunchDtoList;
+  /** 遷移先スクリーンID */
+  private Integer targetScreenId;
 
   // シリアルバージョンUID
   private static final long serialVersionUID = 1L;
@@ -122,6 +126,24 @@ public class ScreenObjGrpDto extends AbstractDto {
    */
   public void setScreenObjBunchDtoList(List<ScreenObjBunchDto> screenObjBunchDtoList) {
     this.screenObjBunchDtoList = screenObjBunchDtoList;
+  }
+
+  /**
+   * 遷移先スクリーンIDを取得します。
+   * 
+   * @return 遷移先スクリーンID
+   */
+  public Integer getTargetScreenId() {
+    return targetScreenId;
+  }
+
+  /**
+   * 遷移先スクリーンIDを設定します。
+   * 
+   * @param targetScreenId 遷移先スクリーンID
+   */
+  public void setTargetScreenId(Integer targetScreenId) {
+    this.targetScreenId = targetScreenId;
   }
 
 }
