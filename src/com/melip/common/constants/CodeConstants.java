@@ -6,32 +6,30 @@ package com.melip.common.constants;
 public class CodeConstants {
 
   /**
-   * コンストラクタ
+   * コンストラクタ<br>
+   * インスタンス化できません。
    */
-  private CodeConstants() {
-    // インスタンス化不可
-  }
+  private CodeConstants() {}
 
-  /** ステータス：有効 */
+  /** ステータス：有効 {@value} */
   public static final String CODE_STS_VALID = "val";
-  /** ステータス：無効 */
+  /** ステータス：無効 {@value} */
   public static final String CODE_STS_INVALID = "inval";
-  /** ステータス：削除 */
+  /** ステータス：削除 {@value} */
   public static final String CODE_STS_DELETED = "del";
-  /** 言語区分：共通 */
+  /** 言語区分：共通 {@value} */
   public static final String CODE_LANG_DIV_COMMON = "common";
-  /** 言語区分：共通 */
+  /** 言語区分：共通 {@value} */
   public static final String CODE_LANG_DIV_JAPANESE = "ja";
-  /** 言語区分：共通 */
+  /** 言語区分：共通 {@value} */
   public static final String CODE_LANG_DIV_ENGLISH = "en";
-  /** エンティティ：地域 */
+  /** エンティティ：地域 {@value} */
   public static final String CODE_ENTITY_REGION = "reg";
-  /** エンティティ：施設 */
+  /** エンティティ：施設 {@value} */
   public static final String CODE_ENTITY_FACILITY = "fac";
-  /** エンティティ：施設グループ */
+  /** エンティティ：施設グループ {@value} */
   public static final String CODE_ENTITY_FACILITY_GROUP = "facgrp";
-  /** エンティティ：施設_施設グループ_リンク */
+  /** エンティティ：施設_施設グループ_リンク {@value} */
   public static final String CODE_ENTITY_FACILITY_FACILITY_GROUP_LINK = "facgrpln";
-
 
 }
