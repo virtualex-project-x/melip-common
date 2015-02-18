@@ -7,6 +7,8 @@ public class AttrDto extends AbstractDto {
 
   /** 属性グループIDのフィールド名 */
   public static final String FIELD_ATTR_GRP_ID = "attrGrpId";
+  /** 属性グループエイリアスのフィールド名 */
+  public static final String FIELD_ATTR_GRP_ALIAS = "attrGrpAlias";
   /** 属性グループ種別のフィールド名 */
   public static final String FIELD_ATTR_GRP_TYPE = "attrGrpType";
   /** 属性グループ名称のフィールド名 */
@@ -18,6 +20,8 @@ public class AttrDto extends AbstractDto {
 
   /** 属性グループID */
   private Integer attrGrpId;
+  /** 属性グループエイリアス */
+  private String attrGrpAlias;
   /** 属性グループ種別 */
   private String attrGrpType;
   /** 属性グループ名称 */
@@ -43,6 +47,24 @@ public class AttrDto extends AbstractDto {
    */
   public void setAttrGrpId(Integer attrGrpId) {
     this.attrGrpId = attrGrpId;
+  }
+
+  /**
+   * 属性グループエイリアスを取得します。
+   * 
+   * @return 属性グループエイリアス
+   */
+  public String getAttrGrpAlias() {
+    return attrGrpAlias;
+  }
+
+  /**
+   * 属性グループエイリアスを設定します。
+   * 
+   * @param attrGrpAlias 属性グループエイリアス
+   */
+  public void setAttrGrpAlias(String attrGrpAlias) {
+    this.attrGrpAlias = attrGrpAlias;
   }
 
   /**
