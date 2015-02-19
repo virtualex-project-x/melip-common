@@ -3,12 +3,10 @@ package com.melip.common.dto.common;
 import java.util.List;
 
 /**
- * リソースDTO
+ * 複数用のリソースDTOです。
  */
-public class ResourceDto extends AbstractDto {
+public class ResourceMultiDto extends AbstractResourceDto {
 
-  /** エンティティのフィールド名 */
-  public static final String FIELD_ENTITY = "entity";
   /** 全件数のフィールド名 */
   public static final String FIELD_ALL_COUNT = "allCount";
   /** 開始位置のフィールド名 */
@@ -18,8 +16,6 @@ public class ResourceDto extends AbstractDto {
   /** DTOリストのフィールド名 */
   public static final String FIELD_DTO_LIST = "dtoList";
 
-  /** エンティティ */
-  private String entity;
   /** 全件数 */
   private Integer allCount;
   /** 開始位置 */
@@ -30,21 +26,17 @@ public class ResourceDto extends AbstractDto {
   private List<? extends IDto> dtoList;
 
   /**
-   * エンティティを取得します。
-   * 
-   * @return エンティティ
+   * コンストラクタ
    */
-  public String getEntity() {
-    return entity;
-  }
+  public ResourceMultiDto() {}
 
   /**
-   * エンティティを設定します。
+   * コンストラクタ
    * 
    * @param entity エンティティ
    */
-  public void setEntity(String entity) {
-    this.entity = entity;
+  public ResourceMultiDto(String entity) {
+    super(entity);
   }
 
   /**

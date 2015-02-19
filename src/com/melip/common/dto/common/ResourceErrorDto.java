@@ -3,9 +3,9 @@ package com.melip.common.dto.common;
 import java.util.List;
 
 /**
- * エラー情報を保持するDTOです。
+ * エラー情報を保持するリソースDTOです。
  */
-public class ErrorDto extends AbstractDto {
+public class ResourceErrorDto extends AbstractResourceDto {
 
   /** エラーメッセージリストのフィールド名 */
   public static final String FIELD_ERR_MSG_LIST = "errMsgList";
@@ -16,14 +16,26 @@ public class ErrorDto extends AbstractDto {
   /**
    * コンストラクタ
    */
-  public ErrorDto() {}
+  public ResourceErrorDto() {}
 
   /**
    * コンストラクタ
    * 
-   * @param errMsgList
+   * @param errMsgList エラーメッセージリスト
    */
-  public ErrorDto(List<String> errMsgList) {
+  public ResourceErrorDto(List<String> errMsgList) {
+    this(null, errMsgList);
+  }
+
+  /**
+   * コンストラクタ
+   * 
+   * @param entity エンティティ
+   * @param errMsgList エラーメッセージリスト
+   */
+  public ResourceErrorDto(String entity, List<String> errMsgList) {
+
+    super(entity);
     this.errMsgList = errMsgList;
   }
 
