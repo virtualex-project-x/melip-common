@@ -7,6 +7,8 @@ import java.util.List;
  */
 public class ResourceErrorDto extends AbstractResourceDto {
 
+  private static final long serialVersionUID = 1L;
+
   /** エラーメッセージリストのフィールド名 */
   public static final String FIELD_ERR_MSG_LIST = "errMsgList";
 

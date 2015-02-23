@@ -4,13 +4,12 @@ import java.util.List;
 
 import org.apache.commons.collections.CollectionUtils;
 
-import com.melip.common.dto.common.AbstractDto;
-import com.melip.common.dto.common.AttrDto;
-
 /**
  * 施設DTO
  */
 public class FacilityDto extends AbstractDto {
+
+  private static final long serialVersionUID = 1L;
 
   /** エンティティ */
   public static final String ENTITY = "Facility";

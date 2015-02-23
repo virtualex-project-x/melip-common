@@ -7,6 +7,8 @@ package com.melip.common.dto.common;
  */
 public class ResourceSingleDto<T extends IDto> extends AbstractResourceDto {
 
+  private static final long serialVersionUID = 1L;
+
   /** DTOのフィールド名 */
   public static final String FIELD_DTO = "dto";
 

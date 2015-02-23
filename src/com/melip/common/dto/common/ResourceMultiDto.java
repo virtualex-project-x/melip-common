@@ -7,6 +7,8 @@ import java.util.List;
  */
 public class ResourceMultiDto extends AbstractResourceDto {
 
+  private static final long serialVersionUID = 1L;
+
   /** 全件数のフィールド名 */
   public static final String FIELD_ALL_COUNT = "allCount";
   /** 開始位置のフィールド名 */

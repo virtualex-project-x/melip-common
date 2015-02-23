@@ -5,6 +5,8 @@ package com.melip.common.dto.common;
  */
 public class AttrDto extends AbstractDto {
 
+  private static final long serialVersionUID = 1L;
+
   /** 属性グループIDのフィールド名 */
   public static final String FIELD_ATTR_GRP_ID = "attrGrpId";
   /** 属性グループエイリアスのフィールド名 */

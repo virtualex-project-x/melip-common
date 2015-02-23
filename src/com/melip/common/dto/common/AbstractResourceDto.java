@@ -5,6 +5,8 @@ package com.melip.common.dto.common;
  */
 public abstract class AbstractResourceDto extends AbstractDto {
 
+  private static final long serialVersionUID = 1L;
+
   /** エンティティのフィールド名 */
   public static final String FIELD_ENTITY = "entity";
 
