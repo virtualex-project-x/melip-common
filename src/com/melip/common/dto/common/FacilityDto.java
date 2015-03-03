@@ -20,6 +20,8 @@ public class FacilityDto extends AbstractDto {
   public static final String FIELD_LATITUDE = "latitude";
   /** 経度のフィールド名 */
   public static final String FIELD_LONGITUDE = "longitude";
+  /** 距離のフィールド名 */
+  public static final String FIELD_DISTANCE = "distance";
   /** 属性DTOリストのフィールド名 */
   public static final String FIELD_ATTR_DTO_LIST = "attrDtoList";
 
@@ -29,6 +31,8 @@ public class FacilityDto extends AbstractDto {
   private Float latitude;
   /** 経度 */
   private Float longitude;
+  /** 距離 */
+  private Integer distance;
   /** 属性DTOリスト */
   private List<AttrDto> attrDtoList;
 
@@ -105,6 +109,24 @@ public class FacilityDto extends AbstractDto {
    */
   public void setLongitude(Float longitude) {
     this.longitude = longitude;
+  }
+
+  /**
+   * 距離を取得します。
+   * 
+   * @return 距離
+   */
+  public Integer getDistance() {
+    return distance;
+  }
+
+  /**
+   * 距離を設定します。
+   * 
+   * @param distance 距離
+   */
+  public void setDistance(Integer distance) {
+    this.distance = distance;
   }
 
   /**
