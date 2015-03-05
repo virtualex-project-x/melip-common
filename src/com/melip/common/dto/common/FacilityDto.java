@@ -2,8 +2,6 @@ package com.melip.common.dto.common;
 
 import java.util.List;
 
-import org.apache.commons.collections.CollectionUtils;
-
 /**
  * 施設DTO
  */
@@ -46,7 +44,7 @@ public class FacilityDto extends AbstractDto {
 
     String attrVal = null;
 
-    if (CollectionUtils.isNotEmpty(getAttrDtoList())) {
+    if (null != getAttrDtoList() && getAttrDtoList().size() > 0) {
       for (AttrDto attrDto : getAttrDtoList()) {
         if (attrGrpAlias.equals(attrDto.getAttrGrpAlias())) {
           attrVal = attrDto.getAttrVal();
