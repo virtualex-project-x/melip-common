@@ -7,6 +7,8 @@ public class AttrDto extends AbstractDto {
 
   private static final long serialVersionUID = 1L;
 
+  /** 属性値多言語IDのフィールド名 */
+  public static final String FIELD_ATTR_VAL_LANG_ID = "attrValLangId";
   /** 属性グループIDのフィールド名 */
   public static final String FIELD_ATTR_GRP_ID = "attrGrpId";
   /** 属性グループエイリアスのフィールド名 */
@@ -15,11 +17,15 @@ public class AttrDto extends AbstractDto {
   public static final String FIELD_ATTR_GRP_TYPE = "attrGrpType";
   /** 属性グループ名称のフィールド名 */
   public static final String FIELD_ATTR_GRP_NM = "attrGrpNm";
+  /** 属性言語区分のフィールド名 */
+  public static final String FIELD_ATTR_LANG_DIV = "attrLangDiv";
   /** 属性値のフィールド名 */
   public static final String FIELD_ATTR_VAL = "attrVal";
   /** 属性コード値のフィールド名 */
   public static final String FIELD_ATTR_CD_VAL = "attrCdVal";
 
+  /** 属性値多言語ID */
+  private Integer attrValLangId;
   /** 属性グループID */
   private Integer attrGrpId;
   /** 属性グループエイリアス */
@@ -28,10 +34,30 @@ public class AttrDto extends AbstractDto {
   private String attrGrpType;
   /** 属性グループ名称 */
   private String attrGrpNm;
+  /** 属性言語区分 */
+  private String attrLangDiv;
   /** 属性値 */
   private String attrVal;
   /** 属性コード値 */
   private String attrCdVal;
+
+  /**
+   * 属性値多言語IDを取得します。
+   * 
+   * @return 属性値多言語ID
+   */
+  public Integer getAttrValLangId() {
+    return attrValLangId;
+  }
+
+  /**
+   * 属性値多言語IDを設定します。
+   * 
+   * @param attrValLangId 属性値多言語ID
+   */
+  public void setAttrValLangId(Integer attrValLangId) {
+    this.attrValLangId = attrValLangId;
+  }
 
   /**
    * 属性グループIDを取得します。
@@ -103,6 +129,24 @@ public class AttrDto extends AbstractDto {
    */
   public void setAttrGrpNm(String attrGrpNm) {
     this.attrGrpNm = attrGrpNm;
+  }
+
+  /**
+   * 属性言語区分を取得します。
+   * 
+   * @return 属性言語区分
+   */
+  public String getAttrLangDiv() {
+    return attrLangDiv;
+  }
+
+  /**
+   * 属性言語区分を設定します。
+   * 
+   * @param attrLangDiv 属性言語区分
+   */
+  public void setAttrLangDiv(String attrLangDiv) {
+    this.attrLangDiv = attrLangDiv;
   }
 
   /**
