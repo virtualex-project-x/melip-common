@@ -1,7 +1,7 @@
 # Build方法
 (root)/build.xmlを実行すると下記ファイルが作成される。<br>
 　1. (root)/release/melip-common.jar<br>
-　2. (root)/release/melip-common-src.zip<br>
+　2. (root)/release/melip-common-src.zip<br><br>
 尚、AndroidでJava1.7を使用している為、Build.xmlでコンパイルターゲットを指定している。
 
 ```
